@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar Javascript String</title>
+</head>
+<body>
+
+	<p id="coba"></p>
+	<p id="coba1"></p>
+	<p id="coba2"></p>
+	<p id="coba3"></p>
+	<p id="coba4"></p>
+	<p id="coba5"></p>
+	<p id="coba6"></p>
+	<script type="text/javascript">
+		
+		var x = "My First Javascript";
+
+		document.getElementById("coba").innerHTML = x;
+
+		// Untuk menuliskan nilai string dapatmenggunakan tanda " " atau ' ', juga dapat menggunakan tanda petik didialam selama tidak sama dengan yang mengelilingi javascript
+
+		// untuk menemukan panjang string dapat menggunakan "lengt"
+
+		var txt = "string";
+		var count = txt.length;
+
+		document.getElementById("coba1").innerHTML = count;
+
+		// gunakan backslash escape character untuk menggunakan tanda petik yang sama
+
+		var x1 = "Nama saya \"Taufik\" dari tanjung raja";
+		
+		document.getElementById("coba2").innerHTML = x1;
+
+		// tanda \' memasukan tanda petik satu
+
+		var x2 = 'it\'s alright';
+
+		document.getElementById("coba3").innerHTML = x2;
+
+		var x ="Karakter \\ adalah backslash";
+
+		document.getElementById("coba4").innerHTML = x;
+
+		// Dapat menspasi baris kode yang kepanjangan
+
+		var nama ="Taufiiqul\
+		 Hakim";
+
+		 document.getElementById("coba5").innerHTML = nama;
+		 // Cara lebih aman dengan menggunakan tanda +
+
+		 // Jadi String juga dapat didefinisikan sebagai objek
+
+		 var firstname = "Taufik";
+		 var y = new String("Taufik","Hakim")
+
+		 document.getElementById("coba6").innerHTML = y+ " " + firstname;
+
+		 // Membandingkan objek dengan objek, menggunakan == ataupun === akan selalu menghasilkan nilai false
+		var txt = "Taufiiqulhakim";
+		var hitung = txt.length;
+		alert(hitung);
+
+	</script>
+</body>
+</html>

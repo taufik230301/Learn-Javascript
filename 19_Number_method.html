@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Beljar Javascript Number Method</title>
+</head>
+<body>
+	<p id="coba1"></p>
+	<p id="coba2"></p>
+	<p id="coba3"></p>
+	<p id="coba4"></p>
+	<p id="coba5"></p>
+	<p id="coba6"></p>
+	<p id="coba7"></p>
+	<p id="coba8"></p>
+	<p id="coba9"></p>
+	<p id="coba10"></p>
+	<script type="text/javascript">
+		
+		var x = 123;
+		document.getElementById("coba1").innerHTML = x.toString();
+
+		document.getElementById("coba2").innerHTML = (123).toString();
+
+		var x1 = 6.908;
+		document.getElementById("coba3").innerHTML = x1.toExponential(2);
+
+		var x2 = 23.66;
+		document.getElementById("coba4").innerHTML = x2.toFixed(2);
+
+		var x3 = 9.56;
+		document.getElementById("coba5").innerHTML = x3.toPrecision(2);
+
+		var x4 = 345;
+		document.getElementById("coba6").innerHTML = x4.valueOf();
+
+		var x5 = true;
+		document.getElementById("coba7").innerHTML = Number(x5);
+
+		var x6 = false;
+		document.getElementById("coba8").innerHTML = Number(x6);
+
+		var x7 = new Date("2017-09-30");
+		document.getElementById("coba9").innerHTML = Number(x7);
+
+		var x8 = "10";
+		document.getElementById("coba10").innerHTML = parseInt(x8);
+
+		// Also u can use parseFloat()
+
+		// var x = Number.MAX_VALUE; return the largest possible number in Javascript
+		// var x = Number.MIN_VALUE; return the lowest possible number in javascript
+
+		// u can return positif infinity with
+		// var x = Number.POSITIVE_INFINITY;
+		// u can rerutn negatif infinity also
+		// Number Cannot used in variable
+	</script>
+
+</body>
+</html>

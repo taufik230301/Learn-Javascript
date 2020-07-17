@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar javascript Event</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		// jadi, event adalah hal yang tejadi didalam elemen HTML
+		function panggil(){
+			 document.getElementById('coba').innerHTML = Date();
+		}
+
+		// untuk mengubah konten HTML berdasarkan elemen itu sendiri, menggunakan this
+	function date(){
+		return document.getElementById("coba1").innerHTML = Date();
+	}
+
+	</script>
+
+	<button type="button" onclick="panggil()">Klik disni</button>
+	<p id="coba"></p>
+
+	<button type="button" onclick="this.innerHTML= Date()">klik ubah</button>
+
+<!-- 	Jika kepangjangan dalam menulis kode pada bagian onclick, bisa menggunakan fungsi  -->
+<br>
+	<button type="button" onclick="date()">Date</button>
+	<p id="coba1"></p>
+
+</body>
+</html>

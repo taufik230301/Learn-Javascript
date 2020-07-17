@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar Javacript Tipe Data</title>
+</head>
+<body>
+	<p id="coba"></p>
+	<p id="coba1"></p>
+	<p id="coba2"></p>
+	<p id="coba3"></p>
+	<p id="coba4"></p>
+	<p id="coba5"></p>
+	<p id="coba6"></p>
+	<p id="coba7"></p>
+	<p id="coba8"></p>
+	<p id="coba9"></p>
+	<p id="coba10"></p>
+	<p id="coba11"></p>
+	<p id="coba12"></p>
+	<p id="coba13"></p>
+	<p id="coba14"></p>
+	<script type="text/javascript">
+
+		// Contoh Tipe Data
+		// var length = 16; Number
+		// var lastName = "Hakim"; String
+	// 	// var x ={ 
+	// 				firstName: "Taufik",
+	// 	// 			lastName: "Hakim"
+	// 			}; Object
+
+	// Ketika menambahkan angka dengan string, Javascritp akan memperlakukan angka seperti string
+
+	var x = "taufik" + 23;
+
+	document.getElementById("coba").innerHTML = x;
+
+	// Javascript membaca ekspresi dario kiri kenan, urutan yang berbeda menghasilkan hasil yang berbeda
+
+	// Tipe Data pada javascript dinamis, sehingga bisa mendeklarasikan variabel yang sama namun dengan tipe data berbeda
+
+	var x,
+	x = 5,
+	x = "Taufik";
+	document.getElementById("coba1").innerHTML=x;
+
+	// Javascript String atau teks string adalah kumpulan karakter huruf seperti "Taufiiqulhakim". string ditulis dengan tanda petik, dapat dengan tanda petik satu, atau tanda petik dua
+	var nama = "Taufik",
+		nama2 = "hakim";
+
+		document.getElementById("coba2").innerHTML = nama;
+
+		// string dapat diisi tanda petik, selama tidak cocok dengan tanda petik yang mengelilingi stirng
+
+		var nama3 = "Nama saya adalah 'taufik'";
+		document.getElementById("coba3").innerHTML= nama3;
+
+		// angka pada java script dapat ditulis desimal maupun bukan desimal
+
+		var angka = 12;
+		var angka1 = 23.1;
+
+		document.getElementById("coba4").innerHTML = angka;
+
+		// angka pada javascript juga dapat ditulis dengan ekponensial
+
+		var angka2 = 12e4;
+		var angka3 = 12e-2;
+
+		document.getElementById("coba5").innerHTML = angka2;
+
+		// Javascript boolean, menghasilkan nilai true dan false
+
+		var x1 = 5,
+			x2 = 5,
+			x3 = 6;
+
+		document.getElementById("coba6").innerHTML = (x1 == x2) +" "+(x2 == x3);
+		
+		// javascript Array menggunakan tanda kurung kurawal {} dan dipisahkan dengan koma.
+
+		var mobil = ["avanza ", " innova", " Toyota"];
+
+		document.getElementById("coba7").innerHTML = mobil;
+
+		// Javascript objek, sama menggunakan tanda {}, tetapi terdiri atas nama dan nilai, dan dipisahkan dengan koma
+		
+		var orang ={
+			namaDepan: "Taufik",
+			namaBelakang: "Hakim",
+			pekerjaan: "Web developer"
+		};
+
+		document.getElementById("coba8").innerHTML = orang.namaDepan + " " + orang.namaBelakang;
+
+		// typeof Operator digunakan untuk menetukan tipe data pada variabel javascript
+
+		var x1 = typeof("nama");
+
+		console.log(x1);
+
+		document.getElementById("coba9").innerHTML = typeof "Hakim";
+
+		var x2 = typeof(1);
+		console.log(x2);
+
+		document.getElementById("coba10").innerHTML = typeof 1;
+
+		var car;
+		document.getElementById("coba11").innerHTML = typeof car;
+
+		var car1 = "";
+		document.getElementById("coba12").innerHTML = typeof car1;
+
+
+		var orang2 = {
+			nama : "taufik",
+			alamat: "Palembang"
+		};
+
+		orang2 = null;
+
+		document.getElementById("coba13").innerHTML = orang2+" " + typeof orang2;
+
+		// jadi null tipe datanya objek, dan undefined tipe datanya undefined
+
+		var orang3 = {
+			nama : "Taufik",
+			kerja :  "Hakim"
+			};
+
+			document.getElementById("coba14").innerHTML = orang3.nama;
+
+
+	</script>
+</body>
+</html>

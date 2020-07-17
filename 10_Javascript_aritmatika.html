@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar Perhitungam aritmatika pada javascript</title>
+</head>
+<body>
+
+	<p id="coba"></p>
+	<p id="coba1"></p>
+	<p id="coba2"></p>
+	<p id="coba3"></p>
+	<p id="coba4"></p>
+	<p id="coba5"></p>
+	<p id="coba6"></p>
+	<p id="coba7"></p>
+	<p id="coba8"></p>
+	<p id="coba9"></p>
+	<p id="coba10"></p>
+	<p id="coba11"></p>
+	<p id="coba12"></p>
+	<p id="coba13"></p>
+		<script type="text/javascript">
+
+		// Operasi aritmatik biasa
+			var x = 10 + 10;
+
+			document.getElementById("coba").innerHTML = x;
+
+			// Operasi Aritmatik mengambil dua variabel dan menghasilkan nilai variable baru
+
+			var a = 100,
+				b = 200;
+			var c = a + b;
+
+			document.getElementById("coba1").innerHTML = c;
+
+			// dan juga ekpresi
+
+			var a1 = 3;
+			var a2 = (100+80) * a1;
+
+			document.getElementById("coba2").innerHTML = a2;
+
+			// Angka didalam javascript di sebut operand
+
+			var x = 5,
+				y = 7;
+
+			// Penambahan
+			var q = x + y;
+			document.getElementById("coba3").innerHTML = q;
+
+			// Pengurangan
+			var q1 = x - y;
+			document.getElementById("coba4").innerHTML = q1;
+
+			// Perkalian
+			var q2 = x * y;
+			document.getElementById("coba5").innerHTML = q2;
+
+			// Pembagian
+			var q3 = x / y;
+			document.getElementById("coba6").innerHTML = q3;
+
+			// Modulo menghasilkan sisa bagi
+			var q4 = x % y;
+			document.getElementById("coba7").innerHTML = q4;
+
+			// increament
+
+			var a1 = 5,
+				a3 = 6;
+				a1++;
+				var a2 = a1;
+
+				document.getElementById("coba8").innerHTML = a2;
+				// decrement
+				 a3--;
+				 var a4 = a3;
+
+				document.getElementById("coba9").innerHTML = a4;
+
+				// pemangkatan
+
+				var g1 = 9;
+				var z1 = g1 ** 2;
+
+				document.getElementById("coba10").innerHTML = z1;
+				// menggunakan math pow
+
+				var f1 = 7;
+				var f2 = Math.pow(f1,2);
+
+				document.getElementById("coba11").innerHTML= f2;
+
+				// operator aritmatika javascript sesuai dengan matematika Kalibataku
+
+				var x5 = 7 + 8 * 9;
+				document.getElementById("coba12").innerHTML = x5;
+
+				// jika didalam kurung, dia mendahulukan dalam kurung sesuai aturan matematika
+
+				var x6 = (1+1)*9;
+
+				document.getElementById("coba13").innerHTML = x6;
+		</script>
+
+
+
+</body>
+</html>

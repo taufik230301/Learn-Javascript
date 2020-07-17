@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar Basic javasript</title>
+</head>
+<body>
+	<h2>Taufiiqulhakim</h2>
+	<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+		klik saya untuk mengubah waktu
+	</button>
+	<p id="demo"></p>
+	
+
+	<p id="coba">Awal text</p>
+	<button type="button" onclick="ubah()">Ubah</button>
+	<script type="text/javascript">
+		function ubah(){
+		document.getElementById('coba').innerHTML ="Coba Manipulasi";
+	}
+	</script>
+	<p id="try">kalimat awal</p>
+	<button onclick="change('Taufiq')">Change</button>
+	<script type="text/javascript">
+		function change(nama){
+			document.getElementById("try").innerHTML = nama;
+		}
+	</script>
+</body>
+</html>

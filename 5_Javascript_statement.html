@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar Javascript basic</title>
+</head>
+<body>
+<h2>Javascript Statement</h2>
+<p>Program Javascript Adalah sekumpulan statement yang akan dijalan kan oleh komputer</p>
+<p id="coba"></p>
+
+<h2>penggunaan insturksi pada javascript</h2>
+<p id="coba1"></p>
+
+<h2>Contoh 3</h2>
+<button type="button" onclick="ubah()">Tampilkan Boneka</button>
+<p id="coba2"> 1</p>
+<p id="coba3"> 2</p>
+
+<script type="text/javascript">
+	var x, y , z;
+	x = 5;
+	y = 9;
+	z = x + y;
+
+	document.getElementById('coba').innerHTML = "Mencoba membuat variable, nilai z adalah " + z ;
+
+	// contoh lagi penggunaan statement pada javascript
+
+	document.getElementById('coba1').innerHTML = 
+	"Belajar memanipulasi DOM";
+
+	function ubah (){
+		document.getElementById('coba2').innerHTML = "Boneka Satu";
+		document.getElementById('coba3').innerHTML = "Boneka Dua";
+	}
+</script>
+
+</body>
+</html>

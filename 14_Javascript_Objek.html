@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar Objek Pada Javascript</title>
+</head>
+<body>
+	<p id="coba"></p>
+	<p id="coba1"></p>
+	<p id="coba2"></p>
+	<p id="coba3"></p>
+	<script type="text/javascript">
+		
+		// Objek itu sama dengan variable, tapi mempunyai banyak nilai didalamnya
+
+		var mobil={
+			nama : "Honda",
+			ukuran: "78 Kg",
+			warna: "Merah"
+		};
+
+		document.getElementById("coba").innerHTML = mobil.ukuran;
+
+		// Nilai ditulis nama: "Nilai", dipisahkan dengan koma didalam kurung kurawal, diakhiri ;
+
+		// Nama nilai itu biasa disebut properti
+
+		// Objek dapat didefinisikan secara literal
+
+		document.getElementById("coba1").innerHTML = "saya punya mobil " + mobil.nama + " Mempunyai warna "+ mobil.warna;
+
+		// Pasangan nama: "Nilai" disebut properti dan nilai properti
+
+		// Cara memanggil Objek dengan menuliskan
+		// Namobjek.namaProperti
+		// atau namaObjek["namaProperti"]
+
+		var orang ={
+			nama : "Rizki",
+			umur : 78,
+			warna : "coklat"
+		};
+
+
+		document.getElementById("coba2").innerHTML = orang.nama;
+
+		// Objek mempunyai method, method adalah aksi yang dapat ditampilkan didalam objek
+
+		var orang1 ={
+			nama :"Hakim",
+			umur :"45",
+			warna : "putih",
+			namadepan: "Taufik",
+			namaLengkap : function(a){
+				return this.nama + " "+this.namadepan + a;
+			}
+		};
+
+		document.getElementById("coba3").innerHTML = orang1.namaLengkap("andi");
+
+		// cara mengakses method objek dengan menggunakan
+		// namaObjek.namaMethod()
+	</script>
+</body>
+</html>

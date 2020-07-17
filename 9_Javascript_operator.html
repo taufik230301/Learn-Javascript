@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar Javscript Operator</title>
+</head>
+<body>
+	<p id="coba"></p>
+	<p id="coba1"></p>
+	<p id="coba2"></p>
+	<p id="coba3"></p>
+	<p id="coba4"></p>
+	<p id="coba5"></p>
+	<script type="text/javascript">
+		// untuk menetapkan nilai pada variable, dapat menggunakan operator " = ", dan menggabungkan mereka.
+
+
+		var x = 5;
+		var y = 8;
+		var z = x + y;
+
+		// Operator "+" untuk menjumlahkan angka
+		// untuk mengalikan dapat menggunakan operator "*"
+
+		var x = 8,
+			y = 7,
+			z = x * y;
+			document.getElementById("coba").innerHTML = z;
+
+		// Ada bebrapa operator
+		// contoh = * , + , -, %, / ++, --, **
+
+		// x = 7 , same as x = 7
+		// x += y, same as x = x+y
+		// x-= y same as x = x-y
+		// x*=y same as x = x*y
+		// x%=y same as x = x%y
+		// x/=y same as, x = x/y
+		// x**=y same as, x = x**y
+
+		// x=+y same as = x+y=y
+		
+
+		
+		// example
+
+		var x = 8,
+			y = 8;
+
+		x %= y;
+
+		document.getElementById("coba1"). innerHTML = x;
+
+		var x1 = 8,
+			y1 = 9,
+			x2 = 4;
+
+			x1+=y1;
+			x2*=x1;
+
+			document.getElementById("coba2").innerHTML= x2;
+// Operator + juga dapat digunakan untuk menggabungkan string
+
+			var nama = "Taufiiqul",
+				nama1 = " Hakim";
+
+				document.getElementById("coba3").innerHTML = nama + " " + nama1;
+
+				// operator += juga dapat digunakan untuk meggabungkan string
+
+				var txt1 = "Rizki";
+					txt1 += " Hamel";
+					document.getElementById("coba4").innerHTML = txt1;
+
+// if you add number and string, the result will be string
+
+	var h = 5 + 9;
+	var d = "7" + 7;
+	var j = "Hellow" + 9;
+	var g = j + "<br>" + d + "<br>" + h
+
+	document.getElementById("coba5").innerHTML = g;
+
+
+// // Operatot pembanding
+// == equal to
+// === equal value and type
+// >= greater than and equal to
+// <= less than and equal to
+// ? ternary
+// > greater than
+// > less than
+// != not equal
+// !== not equal value and type
+
+
+// Operator Logic
+//  Logic or ||
+//  Logic and && 
+//  Logic not !
+
+/*Javascript Type Operator*/
+
+/*typeof "untuk mengembalikan/ memunculkan tipe variabel"*/
+
+/*instanceofuntuk mengembalikan atau memeunculkan bahwa objek itu serpihan dari objek*/
+
+// Javascript Bitwise operator
+
+	</script>
+</body>
+</html>

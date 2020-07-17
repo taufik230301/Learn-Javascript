@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar Javascript Variable</title>
+</head>
+<body>
+
+
+
+	<p id="coba"></p>
+	<p id="coba1"></p>
+	<p id="coba2"></p>
+	<p id="coba3"></p>
+	<p id="coba4"></p>
+	<p id="coba5"></p>
+	<p id="coba6"></p>
+	<p id="coba7"></p>
+	<p id="coba8"></p>
+	<p id="coba9"></p>
+
+	<script type="text/javascript">
+
+		// Variabel pada javascript dapat menyimpan data
+		var x = 8;
+		var y = 10;
+		var z = x + y;
+		document.getElementById("coba").innerHTML = z;
+
+		// Operator Penetapan, contohnya =, adalah operator untuk menetapkam suatu nilai, bukan sama dengan, gunakan == untuk sama dengan
+
+		// Pada umumnya tipe data dalam javascript, ada dua, yang pertama itu stirng disimpan menggunakan tanda " " dan int tidak menggunakan tanda tersebut;
+
+		var a = 19.8;
+		var b = "9";
+		var c ="Taufik";
+		document.getElementById("coba1").innerHTML= "Menampilkan sebagai sebuah int " + a + " menampilkan sebagai sebuah stirng " + b + " dan menampilkan sebagai stirng " + c;
+
+		// Javascript data mendeklarasikan variabel, dan memberikan nilai pada variabel tesebut
+		var nama = "taufik";
+
+		document.getElementById('coba2').innerHTML = nama;
+
+
+		// kau bisa membuat lebih dari satu variable dalam satu kali deklarasi, berikut contah nya
+
+		var nama1 = "Taufik", 
+			carName = "Honda", 
+			harga = 100;
+
+			document.getElementById("coba3").innerHTML = harga;
+			document.getElementById("coba4").innerHTML = nama1;
+
+			// variable yang tidak diberikan nilai, akan menghasilkan output default "undifined"
+
+			var name = "taufik";
+			var motorname;
+
+			document.getElementById("coba5").innerHTML = motorname;
+			document.getElementById("coba6").innerHTML = name;
+
+			// Javascript bisa berfungsi sebagai penghitung, untuk menghitung nilai dari suatu variabel yang telah dideklarasikan
+
+			var e = 6,
+				f = 8,
+				u = 9;
+			var t = e+f+9;
+			document.getElementById("coba7").innerHTML = t;
+
+			// Variable dapat menggabungkan string
+
+			// Jika Kalian melakukan penghitungan gabungan string dan int, keluaran akan menghasilkan hal berbeda
+
+			var x1 = "5" + 9 + 10;
+			document.getElementById("coba8").innerHTML= x1;
+
+			// Pada Contoh kasusu diatas, string dideklarasikan terlebih dahulu baru int, dan int akan mengikuti sifat string
+
+			var x2 = 9 + 8 + "4";
+			document.getElementById("coba9").innerHTML = x2;
+
+			// perlu diingat bahwa variabel pada javascript dapat dideklarasikan dengan Angka, dollar Sign ($), atau underscore
+
+			// // contoh
+			// var $$$ = "Hellow world";
+			// var $7 = "Taufiiqulhakim";
+			// var _java = "Javascript";
+
+			
+		</script>
+
+</body>
+</html>

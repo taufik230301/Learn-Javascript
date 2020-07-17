@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar Fungsi Pada Javascript</title>
+</head>
+<body>
+
+	<p id="coba"></p>
+	<p id="coba1"></p>
+	<p id="coba2"></p>
+	<p id="coba3"></p>
+	<p id="coba4"></p>
+	<p id="coba5"></p>
+<script type="text/javascript">
+
+	// Fungsi adalah sekumpulan blok kode yang dibuat untuk melakukan tugas tertentu
+	function myFunction(p1,p2){
+		return p1 * p2;
+	}
+
+	document.getElementById("coba").innerHTML = myFunction(2,3);
+
+	// Fungsi javascript akan dieksekusi ketika sesuatu memanggil
+
+	// Sintaks penulisan Fungsi
+	// didefinisikan dengan kata kunci "function"
+
+	// Nama fungsi mengandung angka, huruf, uderskor, dan dollar(Sama dengan variabel)
+
+	// memiliki parameter yang namanya dipisahkan dengan koma
+
+	// function(parameter1, parameter2){
+	// 	kode yang akan dieksekusi
+	// }
+
+	// Argumen adalah nilai yang diterima fungsi ketika dipanggil
+
+	// kode yang ada didalam fungsi akan dieksekusi ketika ada yang memanggilnya
+
+	// Contoh ketika dinpanggil dari kode javascript, atauketika mengklik sesuatu, atau secara otomatis dipanggil
+
+	var x = fungsiA(2, 7);
+
+	document.getElementById("coba1").innerHTML= x;
+	function fungsiA(a, b){
+		return a * b;
+	}
+	// Kegunaan fungsi pada javascript, itu untuk memuat kode menjadi reuseable, dan dengan argumen berbeda. dan menghasilkan hasil berbeda
+
+	function toDollar(Rupiah){
+		return Rupiah/14000 + " Dolar";
+	}
+
+	document.getElementById("coba2").innerHTML = toDollar(14000);
+
+	// Jika Argument tidak dikasih nilai (), akan memanggil seluruh kode yang diisi dalam fungsi
+	function toYuan(dollar){
+		return dollar*3000 +" Yuan";
+	}
+
+	document.getElementById("coba3").innerHTML = toYuan;
+
+	// Fungsi digunakan, sama dengan menggunakan variabel
+
+	// Jika kalian membuat variabel didalam fungsi, akan menjadi lokal variabel dan dapat diakses didalam variabel
+
+	function mobil(){
+		var namaMobil ="Honda";
+		document.getElementById("coba4").innerHTML=namaMobil;
+	}
+	document.getElementById("coba5").innerHTML=typeof namaMobil;
+
+	mobil();
+
+	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belejar javascript string method</title>
+</head>
+<body>
+
+	<p id="coba"></p>
+	<p id="coba1"></p>
+	<p id="coba2"></p>
+	<p id="coba3"></p>
+	<p id="coba4"></p>
+	<p id="coba5"></p>
+	<p id="coba6"></p>
+	<p id="coba7"></p>
+	<p id="coba8"></p>
+	<p id="coba9"></p>
+	<p id="coba10">Nama Saya Taufik dan Taufik</p>
+	<p id="coba11"></p>
+	<button type="button" onclick="ubah('Taufik', 'Hakim')">ubah</button>
+	<p id="coba12"> Aku suka makan bakwan</p>
+	<button onclick="fungsiSaya()">Ubah</button>
+	<p id="coba13">Hellow World</p>
+	<button type="button" onclick="myFunction()">besar</button>
+
+	<p id="coba14">TaufiiqulHakim</p>
+	<button type="button" onclick="kecil()">kecil</button>
+
+	<p id="coba15"></p>
+	
+	<button type="button" onclick="peringatan()"> coba </button>
+
+	<p id="coba16"></p>
+	<p id="coba17"></p>
+
+	<script type="text/javascript">
+		
+		// Dengan javascript nilai yang primitive tersedia untuk properti dan method
+
+		// properti length menghasilkan berapa panjang string
+
+		var nama = "Taufiiqulhakim"
+		var hitung = nama.length;
+
+		document.getElementById("coba").innerHTML= hitung;
+
+		// Menemukan dan menetukan lokasi string didalam sebuah variabel
+		// indexOf(), menetukan lokasi string yang dihitung dari elemen pertama/hurufpertama/angkapertama/ dari sebuah nilai variabel yang merupakan sebuah kalimat atau pun gabungan angka angka
+
+		var hitung1 = "Saya makan nasi";
+		var hitunglah1 = hitung1.indexOf("makan", 5);
+
+		document.getElementById("coba1").innerHTML = hitunglah1;
+
+		var namaorang = "Robi Hidayat Makan Nasi";
+		var x = namaorang.lastIndexOf("Nasi");
+		document.getElementById("coba2").innerHTML = x;
+
+		// lastIndexOf merupakan kebalikan dari indexof
+
+		// dua metode tersebut menerima parameter kedua sebagai posisi untuk dicari
+
+		var hitung2 = "Saya makan nasi";
+		var hitunglah2 = hitung2.indexOf("makan", 8);
+
+		document.getElementById("coba3").innerHTML = hitunglah2;
+
+		var kalimat = "Saya makan gorangan";
+		var cari = kalimat.search("makan");
+
+		document.getElementById("coba4").innerHTML = cari;
+
+		// Jadi kita dapat mengekstrak nilai suatu string yang panjang banget, dengan method slice()
+
+		var buah = "Anggur, Pepaya, Appel";
+		var kata1 = buah.slice(8, 14);
+
+		document.getElementById("coba5").innerHTML = kata1;
+
+		// Kita juga dapat membuat kebalikan dengan menggunakan minus jika ingin memotong nilai string dari akhir.
+
+		var mobil = "Honda, Yamaha, Suzuki";
+		var kata2 = mobil.slice(-14,-8);
+
+		document.getElementById("coba6").innerHTML = kata2;
+
+		// Kita dapat memotong sisa dari nilai stirng
+
+		var motor = "Honda, KLX, Beat";
+		var kata3 = motor.slice(7);
+		document.getElementById("coba7").innerHTML = kata3;
+
+		// dan juga dapat memotong sisa dari akhir menggunakan minus
+
+		// Ada juga substring method hampir sama dengan slice, tetapi tidak bisa menerima index negatif
+
+		var mobil1 ="Nissa, Yamaha, Vega";
+		var kata4 = mobil1.substring(0, 6);
+
+		document.getElementById("coba8").innerHTML = kata4;
+
+		// Fungsi substr() bisa memotong nilai string jika dua parameter, parameter pertama digunakan untuk menetukan index awal nilai yang ingin di potong dan kedua adalah panjang sisanya
+		var mobil2 = "Jeep, Yamaha, Honda";
+		var kata5 = mobil2.substr(5);
+		document.getElementById("coba9").innerHTML = kata5;
+
+		// substr kalau hanya satu parameter akan menampilkan sisanya dari index parameter pertama
+		// kalau minus, kebalikannya
+		function ubah(nama1, nama){
+			var str = document.getElementById("coba10").innerHTML;
+			var txt = str.replace(nama1, nama);
+
+			document.getElementById("coba10").innerHTML = txt;
+		}
+
+		// Method replace hanya untuk kata pertama yang cocok
+		// Method Replace merupakan case sansitif
+
+		// Mengubah String menjadi Lower dan Upper
+
+		var kata6 = "taufiiqulhakim";
+		var ubahup = kata6.toUpperCase();
+
+		document.getElementById("coba11").innerHTML = ubahup;
+
+		function fungsiSaya(){
+			var nama2 = document.getElementById("coba12").innerHTML;
+			var teks = nama2.replace("Aku", "saya");
+
+			document.getElementById("coba12").innerHTML = teks;
+
+			}
+		function myFunction(){
+				var teks1 = document.getElementById("coba13").innerHTML;
+				document.getElementById("coba13").innerHTML = teks1.toUpperCase();
+			}
+
+			function kecil(){
+				var teks2 = document.getElementById("coba14").innerHTML;
+
+				document.getElementById("coba14").innerHTML = teks2.toLowerCase();
+			}
+
+			var kalimat1 = "Hellow";
+			var kalimat2 = "World";
+			var kalimat3 = kalimat1.concat(" ",kalimat2);
+			document.getElementById("coba15").innerHTML = kalimat3;
+
+			
+			function peringatan(){
+				var kalimat4 = "  Hai dunia    ";
+				alert(kalimat4.trim());
+			}
+
+			var kalimat5 = "Hello world!";
+			document.getElementById("coba16").innerHTML = kalimat5.charAt(4);
+
+
+
+			var kalimat6 ="Taufik";
+			var arr = kalimat6.split("");
+			var text1 = "";
+			var i;
+			for (i = 0; i < arr.length; i++){
+				text1 += arr[i] + "<br>"
+			}
+			document.getElementById("coba17").innerHTML = text1;
+	</script>
+</body>
+</html>

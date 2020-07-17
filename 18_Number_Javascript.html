@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar Number</title>
+</head>
+<body>
+	<p id="coba"></p>
+	<p id="coba1"></p>
+	<p id="coba2"></p>
+	<p id="coba3"></p>
+	<p id="coba4"></p>
+	<p id="coba5"></p>
+	<p id="coba6"></p>
+	<p id="coba7"></p>
+	<script type="text/javascript">
+		var x = 3.14;
+		var y = 3;
+		document.getElementById("coba").innerHTML = x +"<br>"+y;
+
+		var x1 = 123e5;
+		var y1 = 123e-5;
+		document.getElementById("coba1").innerHTML = x1 + "<br>" + y1;
+
+		var x2 = 99999999999999;
+		var y2 = 99999999999999999;
+		document.getElementById('coba2').innerHTML = x2;
+		document.getElementById("coba3").innerHTML = y2;
+
+		var x3 = 0.2 + 0.1;
+
+		document.getElementById("coba4").innerHTML = x3;
+
+		var x4 = (0.2 * 10 + 0.1 * 10)/ 10;
+		document.getElementById("coba5").innerHTML= x4;
+
+		var x5 = 10;
+		var x6 = 20;
+		var x61 = x5 + x6;
+		document.getElementById("coba6").innerHTML = x61;
+
+		var x7 = "10";
+		var x8 = "20";
+		var x71 = x8 + x7;
+		console.log(x71);
+
+		var x9 = 100 / "apple";
+		console.log(x9);
+
+		var x10 = 10;
+		var x11 = 20;
+		console.log("The result is :" + x10 + x11);
+
+		var x12 = 10;
+		var x13 = 11;
+		var x14 = "12";
+	 	console.log(x12+x13+x14);
+
+		// Javascript dapat mengubah nilai string dengan number di semua operasi matematika mecuali penambahan, karena pemanbahan untuk menggabugkan stirng
+	</script>
+
+</body>
+</html>

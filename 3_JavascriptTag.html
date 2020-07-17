@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+	function ubah(){
+		document.getElementById('demo1').style.fontSize="35px";
+	}
+</script>
+<h2>Memanggil fungsi ketika di click</h2>
+<p id="demo1">Coba ubah saya</p>
+<button type="button" onclick="ubah()">ubah</button>
+</head>
+<body>
+	<h2>Javascript di dalam Tag body</h2>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		document.getElementById('demo').innerHTML ="File javaScript Pertama saya";
+	</script>
+
+<!-- Fungsi didalam javascript dapat dipanggil -->
+<script type="text/javascript">
+	function ubah(){
+		document.getElementById('demo1').style.fontSize="35px";
+	}
+</script>
+<h2>Memanggil fungsi ketika di click</h2>
+<p id="demo1">Coba ubah saya</p>
+<button type="button" onclick="ubah()">ubah</button>
+</body>
+</html>
