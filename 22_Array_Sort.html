@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <p>Cara menggunakan function untuk mengurutkan data secara alpabhet</p>
+
+    <button onclick="myFunction()">urutkan</button>
+    <button onclick="reverse()">kebalikan</button>
+    
+
+    <p id="demo"></p>
+
+    <p id="coba1"></p>
+    <button onclick="mengurutAngka()">Urutkan Angka</button>
+    <button onclick="membalikanAngka()">Balikan Angka</button>
+    <button onclick="urutanRandom()">Random</button>
+    <p id="coba"></p>
+
+    <p id="coba2"></p>
+    <span id="coba3"></span>
+
+    <p id="coba4"></p>
+    <button onclick="Tertinggi()">Cari Angka Terbesar</button>
+    <button onclick="semula()">Kembali Ke asal</button>
+    <button onclick="Terkecil()">Cari Angka Terkecil</button>
+    <script>
+       var buah = ["Apel", "Stroberi", "Jeruk", "Nanas" ];
+       document.getElementById("demo").innerHTML = buah;
+      
+      // Mengurutkan Array menggunakan method sort
+       function myFunction() {
+         buah.sort();
+           document.getElementById("demo").innerHTML = buah;
+       }
+
+      //  Mengurutkan Array dari DESC Menggunakan Reverse
+        const reverse = () => { buah.reverse(); document.getElementById("demo").innerHTML = buah;}
+
+        // untuk mengurutkan array yang berisi nilai number, menggunakan function(){ return a - b}
+
+        var angka = [1, 90, 50, 30, 24, 70];
+
+        document.getElementById("coba1").innerHTML = angka;
+        const mengurutAngka = () => { 
+          angka.sort( urut = (a,b) => { return a - b; }  );
+        document.getElementById("coba").innerHTML = angka; }
+
+        const membalikanAngka = () => { 
+          angka.sort( urut = (a,b) => { return b - a; }  );
+        document.getElementById("coba").innerHTML = angka; }
+
+        // Cara Javascript mengurutkan dengan urutan yang random
+
+          const urutanRandom = () => {
+            angka.sort( urut = (a, b) => { return 0.5 - Math.random()});
+            document.getElementById("coba").innerHTML = angka;
+          }
+
+          // Tidak ada method javascript untuk menentukan nilai maksimum dan minimum
+          // Pada Array, oleh karena itu nilai mmaksimum dan minimum dapat ditentukan
+          // Menggunakan cara berikut
+
+          var numbers = [10, 20, 30, 11, 26, 80, 30];
+          numbers.sort(function(a, b){return a-b});
+          document.getElementById("coba2").innerHTML = numbers[0];
+
+          var points = [40, 100, 1, 5, 25, 10];
+          points.sort(function(a, b){return a-b});
+          document.getElementById("coba3").innerHTML = points[points.length-1];
+
+          // Menentukan Angka terbesar juga bisa menggunakan Method Java script
+          // Nilai Tertinggi menggunakan Max.Math.Apply dan Terendah Min.Math.Apply
+          var numbers1 = [10, 20, 30, 11, 26, 80, 30];
+          document.getElementById("coba4").innerHTML = numbers1;
+
+       
+          var Tertinggi = () => {
+            var myArrayMax = (arr) =>{
+            return Math.max.apply(null, arr);
+          }
+
+            document.getElementById("coba4").innerHTML = myArrayMax(numbers1);
+          }
+
+          var semula = () => {
+            document.getElementById("coba4").innerHTML = numbers1;
+          }
+
+          var Terkecil = () => {
+            var myArrayMin = (arr) => {
+              return Math.min.apply(null, arr);
+            }
+
+            document.getElementById("coba4").innerHTML = myArrayMin(numbers1);
+          }
+        </script>
+      
+      
+    
+</body>
+</html>

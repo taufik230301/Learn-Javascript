@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Array Bermacam Metode array</title>
+</head>
+<body>
+    <p id="coba"></p>
+    <p id="coba1"></p>
+    <p id="coba2"></p>
+    <p id="coba3"></p>
+    <p id="coba4"></p>
+    <p id="coba5"></p>
+    <p id="coba6"></p>
+    <p id="coba7"></p>
+    <p id="coba8"></p>
+    <p id="coba9"></p>
+    <button onclick="tambah()">Add</button>
+    <p id="coba10"></p>
+    <button onclick="hapus()">Hapus</button>
+    <p id="coba11"></p>
+    <p id="coba12"></p>
+    <p id="coba13"></p>
+    <p id="coba14"></p>
+    <p id="coba15"></p>
+    <p id="coba16"></p>
+    <p id="coba17"></p>
+    <p id="coba18"></p>
+    <script>
+        // Untuk mengubah array menjadi string kita menggunakan metode toString()
+
+        var nama = ["Bayu", "Wahyu", "robi", "Melan"];
+        var ubah = nama.toString();
+        document.getElementById("coba").innerHTML = ubah;
+        document.getElementById("coba1").innerHTML = typeof(ubah);
+
+        // Method Join sama Dengan To string, tapi kita bisa menspesfikasi pemisah element
+        // Pada String nya
+
+        document.getElementById("coba2").innerHTML = nama.join("*");
+        
+        // Untuk menghapus element array menggunakan method pushing dan untuk menghapus menggunakan popping
+
+        var mobil = ["Suzuki", "Landcuiser", "Jass", "Mazda"];
+        mobil.push("Kodok");
+
+        document.getElementById("coba3").innerHTML = mobil;
+
+        mobil.pop();
+
+        document.getElementById("coba4").innerHTML = mobil;
+
+        // Penggunaan Method Shift sama seperti pop untuk menghapus, tapi shift untuk element yang paling belakang
+
+        mobil.shift();
+        document.getElementById("coba5").innerHTML = mobil;
+
+        // Penggunaan Method Unshift untuk menambah Array dari belakang
+        mobil.unshift("Sedan");
+        document.getElementById("coba6").innerHTML = mobil;
+
+        // Untuk mengubah nilai element kita bisa menggunakan index pada array sebagai contoh berikut
+
+        var orang = ["Rizki", "Tufik", "John", "Doe"];
+        orang[0] = "Aldy";
+
+        document.getElementById("coba7").innerHTML = orang;
+
+        // Menggunakan Properti length, untuk menambhakan element pada array
+
+        var namaHewan = ["Anjing", "Kucing", "Harimau", "Macan"];
+         document.getElementById("coba8").innerHTML = namaHewan;
+
+         var tambah = () => {
+             namaHewan[namaHewan.length] = "Monyet";
+             document.getElementById("coba9").innerHTML = namaHewan;
+         } 
+         var hapus = () => {
+             delete namaHewan[namaHewan.length - 1];
+             document.getElementById("coba10").innerHTML = namaHewan;
+
+         }
+
+        //  Method Splice untuk menambah, mengubah element pada Array, Method Splice Banyak kegunaan
+
+        var namaOrang = ["Taufik", "Robi", "Aidil", "Mahmud"];
+
+        namaOrang.splice(1, 0, "Tegar");
+        document.getElementById("coba11").innerHTML = namaOrang;
+        //  Penjelasan Parameter Pada Element
+        // Parameter pertama adalah posisi dimana akan menambahkan element Baru
+        // Parameter kedua adalah berapa banyak element yang akan dihapus setelah index
+        // yang tadi pada parameter pertama
+        // Sisa parameternya adalah element yang ingin ditambahkan pada array
+
+        // Mennggabungkan Dua Array menggunakan Method concat
+
+        var wanita = ["Adin", "Maya", "Mawar", "Bunga"];
+        var lakilaki = ["Joni", "Toy"];
+
+        var gabungkan = wanita.concat(lakilaki);
+
+        document.getElementById("coba12").innerHTML = gabungkan;
+        // <!-- Menggabungkan 3 variable array -->
+           var banci =["Tani", "Wenda"];
+
+           var gabungkanTiga = banci.concat(wanita, lakilaki);
+
+           document.getElementById("coba13").innerHTML = gabungkanTiga;
+
+        //    Menambahkan nilai menggunakan concat
+
+        var tambahConcat = banci.concat("Ari");
+        document.getElementById("coba14").innerHTML = tambahConcat;
+
+        // Slice seperti artinya memotong, yakni slice digunakan untuk memotong array
+        // Sesuai Index dan membuat array baru
+
+        var buah = ["Orange", "Banana", "Rambutan","Semangka", "Jambu", "pisang"];
+
+        var baru = buah.slice(2);
+
+        document.getElementById("coba15").innerHTML = baru;
+
+        var baru1 = buah.slice(1, 4);
+
+        document.getElementById("coba16").innerHTML = baru1;
+
+        // Jadi pada method toString() sama dengan array biasanya, karena akan sama
+        // mengeluarkan output yang dipisahkan dengan koma
+
+        var toko = ["udin", "azhar", "nisa"];
+
+        document.getElementById("coba17").innerHTML = toko; 
+        document.getElementById("coba18").innerHTML = toko.toString(); 
+           </script>    
+         
+</body>
+</html>
